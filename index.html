@@ -63,27 +63,44 @@
                     </div>
                   </div>
                 
-                <!-- traingle -->
+                <!-- paralellogram -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/parallelogram.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">paralellogram</h2>
+                        <p class="text-3xl text-center">Area (A) = b x h</p>
+                        <div class="flex">
+                            <!-- parlellogram base -->
+                            <input  class="w-24 h-8 p-3 rounded-md" type="text" name="" id="base-input-field" placeholder="b">
+                            <span class="mr-2 ml-4">cm</span>
+                            <!-- paralellogram height -->
+                            <input class="w-24 h-8 p-4 rounded-md" type="text" name="" id="height-input-field" placeholder="h">
+                            <span class="ml-3">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area (A) : <span id="valueOfParalellogram"></span>0<span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="paralellogramBase()" class="btn btn-primary w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
-                <!-- reactangle -->
+                <!-- pentagon -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/pentagon.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">pentagon</h2>
+                        <p class="text-3xl text-center">Area (A): 0.5 x b x h</p>
+                        <div class="flex">
+                            <input class="w-24 h-8 p-4 rounded-md" type="text" name="" id="pentagon-perimiter" placeholder="peri">
+                            <span class="mr-2 ml-4">cm</span>
+                            <input class="w-24 h-8 p-4 rounded-md" type="text" name="" id="pentagon-apothem" placeholder="apo">
+                            <span class="mr-2 ml-4">cm</span>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -110,6 +127,9 @@
         </div>
     </main>
     <script src="script/traingle-calculate.js"></script>
+    <script src="script/reactngle.js"></script>
+    <script src="script/paralellogram.js"></script>
+    <script src="script/pentagon-area.js"></script>
 
 </body>
 
