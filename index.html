@@ -9,7 +9,107 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="p-6">
+    <header>
+
+    </header>
+    <main>
+        <!-- main content container -->
+
+        <div class="flex flex-col lg:flex-row">
+
+            <!-- shaphe container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- traingle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="Traingle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Traingle</h2>
+                        <p class="text-center text-3xl">Area (A) = 0.5 X b x h</p>
+                        <div>
+                            <input id="triangle-base" class="w-24 h-8 rounded-md p-5" type="text" placeholder="b">
+                            <span class="ml-1">cm</span>
+                            <input id="triangle-height" class="w-24 h-8 rounded-md p-5" type="text" placeholder="h">
+                            <span class="ml-1">cm</span>
+                            <div>
+                                <p class="text-2xl">Area: <span id="triangle-cal"></span><span>cm<sup>2</sup></span> </p>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- reactangle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Reactangle</h2>
+                      <p class="text-center text-3xl">Area (A):w x i</p>
+                      <div>
+                        <input id="reactangleInputFieldOfWidth" class="w-24 h-8 p-4 rounded-md" type="text" placeholder="w">
+                        <span>cm</span>
+                        <input id="reactangle-input-field-of-i" class="w-24 h-8 p-4 rounded-md" type="text" placeholder="i">
+                        <span>cm</span>
+                        <div>
+                            <p class="text-2xl">Area (A): <span id="reactangle-value"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+                      </div>
+
+                      <div class="card-actions">
+                        <button onclick="reactangleCalculateArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- traingle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- reactangle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- reactangle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- area container -->
+            <div class="w-96 border-2 border-fuchsia-800 rounded-md">
+                <h1 class="text-center text-2xl font-medium">Area Calculate</h1>
+
+
+            </div>
+        </div>
+    </main>
+    <script src="script/traingle-calculate.js"></script>
 
 </body>
 
